@@ -1,3 +1,5 @@
 FROM nginx
 
-COPY ./nyancat/* /usr/share/nginx/html/
+RUN ls -al
+
+COPY ./nyancat/ /usr/share/nginx/html/
