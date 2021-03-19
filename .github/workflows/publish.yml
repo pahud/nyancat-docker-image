@@ -82,13 +82,13 @@ jobs:
       - name: Get short SHA
         id: sha
         run: echo "::set-output name=sha7::$(echo ${GITHUB_SHA} | cut -c1-7)"
+      - name: Checkout Dockerfile
+        uses: actions/checkout@v2
       - name: Checkout Nyan Cat assets
         uses: actions/checkout@v2
         with:
           repository: cristurm/nyan-cat
           path: nyancat
-      - name: Checkout Dockerfile
-        uses: actions/checkout@v2
       - name: ls
         run: |
           ls -al
