@@ -1,3 +1,3 @@
 FROM nginx
 
-ADD . /usr/share/nginx/html/
+COPY ./nyancat/* /usr/share/nginx/html/
