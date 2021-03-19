@@ -89,6 +89,9 @@ jobs:
           path: nyancat
       - name: Checkout Dockerfile
         uses: actions/checkout@v2
+      - name: ls
+        run: |
+          ls -al
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
