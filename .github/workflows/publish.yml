@@ -85,7 +85,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/cristurm/nyan-cat.git
+          repository: cristurm/nyan-cat
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
